@@ -345,16 +345,19 @@ h6 {
   position: fixed;
   inset: 0;
   z-index: 999999;
-  overflow: hidden;
   background: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: all 0.6s ease-out;
 }
 
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
+.preloader-content {
+  text-align: center;
+}
+
+.spinner {
+  margin: 0 auto 20px auto;
   border: 6px solid #ffffff;
   border-color: var(--accent-color) transparent var(--accent-color) transparent;
   border-radius: 50%;
@@ -372,6 +375,12 @@ h6 {
     transform: rotate(360deg);
   }
 }
+
+#preloader p {
+  font-size: 18px;
+  color: var(--accent-color);
+}
+
 
 /*--------------------------------------------------------------
 # Scroll Top Button

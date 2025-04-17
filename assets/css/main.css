@@ -1467,6 +1467,20 @@ section,
   /* Add your styles here */
 }
 
+.activity-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.activity-item p {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #444;
+}
+
 
 
 
